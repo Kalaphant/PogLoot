@@ -3,7 +3,7 @@
   "pools": [
     {
       "rolls": {
-        "min": 4.0,
+        "min": 8.0,
         "max": 8.0,
         "type": "minecraft:uniform"
       },
@@ -15,7 +15,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
+                "min": 2.0,
                 "max": 2.0,
                 "type": "minecraft:uniform"
               }
@@ -70,7 +70,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
+                "min": 12.0,
                 "max": 12.0,
                 "type": "minecraft:uniform"
               }
@@ -95,10 +95,11 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 25,
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:looting\",lvl:3}]}"
             }
           ],
           "name": "minecraft:golden_sword"
@@ -249,6 +250,7 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 10
           "name": "minecraft:enchanted_golden_apple"
         },
         {
